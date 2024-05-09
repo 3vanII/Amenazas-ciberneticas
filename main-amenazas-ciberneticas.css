@@ -2,18 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(232, 236, 237);
 }
 
 /*HEADER (BARRA DE NAVEGACION)*/
 header {
-    background-color: #333;
-    color: #fff;
+    background-image: url(./assets/img/fondo-header.jpg);
+    background-size: 100%;
+    background-position: center;
     padding: 20px 0;
     position: fixed; 
     width: 100%; 
     top: 0; 
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .barra-navegacion {
@@ -22,6 +23,17 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.log p{
+    font-weight: 600;
 }
 
 nav {
@@ -47,18 +59,19 @@ nav ul li:first-child {
 }
 
 header li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: 600;
 }
 
 header li a:hover {
-    color: #ffc107;
+    color: rgb(33, 150, 243);
 }
 
 .logo img {
-    width: 100px;
-    height: auto;
+    width: 80px;
+    height: 80px;
     display: block; 
     margin-top: -10px; 
 }
@@ -92,7 +105,7 @@ header li a:hover {
     height: 136px;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 900px) {
     nav {
         display: none; 
     }
@@ -115,12 +128,12 @@ header li a:hover {
 
 .menu {
     position: fixed;
-    top: auto;
-    left: 200px;
+    top: 120px;
+    left: 9%;
     width: 200px;
     height: fit-content;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: rgb(138, 224, 219);
     overflow-y: auto;
 }
 
@@ -145,37 +158,40 @@ header li a:hover {
 }
 
 .menu ul li a:hover {
-    background-color: #ddd;
-}
-
-.main-content {
-    padding-left: 30px;
+    font-weight: 600;
 }
 
 .content {
     display: flex;
-    padding-top: 63px;
+    padding-top: 120px;
     justify-content: center;
 }
 
-p {
-    width: 35%;
-    margin: 0 auto; 
+section{
+    scroll-margin-top:120px;
+}
+
+.main-content p {
+    margin: 0 10% 10px 30%;
     text-align: justify; 
 }
 
-h2{
-    width: 35%;
-    margin: 20px auto 10px; 
+.main-content h1{
+    margin: 20px 0 10px 30%;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-article h3 {
-    width: 30%;
-    margin: 20px auto 5px; 
+.main-content h2{
+    margin: 20px 0 10px 30%;
 }
 
-article p{
+.main-content article h3 {
     width: 30%;
-    margin: 0 auto; 
+    margin: 20px 0 5px 35%;
+}
+
+.main-content article p{
+    margin: 5px 20% 5px 35%;; 
     text-align: justify;
 }
